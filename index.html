@@ -31,6 +31,11 @@
         basemap: "arcgis/topographic" // basemap styles service
       });
 
+      const geojsonLayer = new GeoJSONLayer({
+      url: https://rleyba19.github.io/geojsonesri/MegaCities.geojson,
+      copyright: "rleyba19"
+      });
+
 
       const view = new MapView({
         map: map,

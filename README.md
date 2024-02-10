@@ -1,3 +1,3 @@
 # helloesri.js
 
-#Setting up esri.js with a GeoJson
+#Setting up esri.js with a GeoJson prerequisite
