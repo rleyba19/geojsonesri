@@ -33,14 +33,19 @@
 
       const geojsonLayer = new GeoJSONLayer({
       url: "https://rleyba19.github.io/geojsonesri/MegaCities.geojson",
-      copyright: "rleyba19"
+      copyright: "rleyba19",
+      popupTemplate: {
+        title: "{City}",
+        content: "{Pop_2010} million people lived here in 2015",
+      }
       });
 
+      map.add(geojsonLayer);
 
       const view = new MapView({
         map: map,
         center: [-118.805, 34.027], // Longitude, latitude
-        zoom: 13, // Zoom level
+        zoom: 1, // Zoom level
         container: "viewDiv", // Div element
         layers: [geojsonLayer]
 
